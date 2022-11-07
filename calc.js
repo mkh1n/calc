@@ -24,8 +24,8 @@ calc.addEventListener('click', function(event) {
             answer += 'Math.sqrt(';
             break
         case '^':
-            result.innerText += '^(';
-            answer += '**(';
+            result.innerText += '^';
+            answer += '**';
             break
         case 'π':
             result.innerText += 'π';

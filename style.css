@@ -22,8 +22,10 @@ p {
 }
   
 .calculation {
-    width: 310px;
-    height: 610px;
+ 
+    width: 20vw;
+    height: max-content;
+    padding-bottom: 10px;
     background-color: #ffffff;
     font-family: "Gilory";
     border-radius: 15px 15px;
@@ -31,7 +33,7 @@ p {
   }
   
 .top {
-    padding: 30px;
+    padding: 7%;
     background-color: #b1c9e0;
     text-align: right;
     letter-spacing: 1.8px;
@@ -41,7 +43,8 @@ p {
 .bottom{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-around;
+
 }
   
 #prev {
@@ -80,24 +83,24 @@ button:last-child:hover {
     border: 3px solid transparent;
     border-radius: 10px;
     background-clip: padding-box;  
+    direction: rtl
   }
-  
 #result::-webkit-scrollbar {
     width: 30px;
 }
   
 .but, .mid{
-    line-height: 3.3;
+    padding-top: 0.3vw;
     text-align: center;
     color: rgb(0, 0, 0);
     background-color: rgb(236, 236, 236);
-    height: 65px;
+    height: 4.2vw;
+    width: 4.2vw;
     display: block;
-    font-size: 1.3em;
+    font-size: 1.4em;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    width: 65px;
     font-family: "Gilory";
     transition: 0.2s;
 }
@@ -118,10 +121,14 @@ button:last-child:hover {
     color: transparent;
     font-family:'Courier New', Courier, monospace;
 }
+.zero{
+    width: 8.4vw; border-radius: 50px 50px;
+}
 img{
     position: relative;
-    left: 5px;
-    width: 30px;
+    left: 10%;
+    bottom: 2%;
+    width: 60%;
     height: auto;
     pointer-events: none;
 
@@ -157,4 +164,78 @@ a{
 a:hover{
     color: #68a3ca;
 }
-  
+
+@media only screen and (max-width: 1280px){
+    .calculation {
+        width: 40vw;
+      }
+      .but, .mid{
+        height: 6vw;
+        width: 6vw;
+    }
+    .mid{
+        margin: 2vw;
+    }
+    .mid{
+        height: 0.1vw;
+    }
+    .calc-row {
+        padding: 6px;
+      }
+      .zero{
+        width: 17vw;
+    }
+    img{
+        width: 3.5vw;
+    }
+}
+@media only screen and (max-width: 920px){
+    .calculation {
+        width: 60vw;
+      }
+      .but, .mid{
+        height: 10vw;
+        width: 10vw;
+    }
+    .mid{
+        margin: 2vw;
+    }
+    .mid{
+        height: 30px;
+    }
+    .calc-row {
+        padding: 6px;
+      }
+      .zero{
+        width: 24vw;
+    }
+    img{
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 468px){
+
+    .calculation {
+        width: 85vw;
+      }
+      .but, .mid{
+        height: 17.5vw;
+        width: 17.5vw;
+    }
+    .mid{
+        margin: 2vw;
+    }
+    .mid{
+        height: 30px;
+    }
+    .calc-row {
+        padding: 6px;
+      }
+      .zero{
+        width: 35vw;
+      }
+}
+
+
