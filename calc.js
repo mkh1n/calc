@@ -35,7 +35,7 @@ calc.addEventListener('click', function(event) {
             result.innerText += '%';
             answer += '*(1/100)';
             break
-        case '()':
+        case '( )':
             if ((answer.split(')').join(', ').split('(').join(', ').split(', ').length-1) % 2 == 0){
                 answer += '(';
                 result.innerText +='(';
