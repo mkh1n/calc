@@ -1,0 +1,160 @@
+@font-face {
+    font-weight: 400;
+    font-family: "Gilory";
+    src: url("Gilroy-Medium.ttf");
+}
+  
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: "Gilory";
+    background: #333131;
+    color:rgb(15, 15, 15)
+}
+  
+p {
+    margin: 5px 0;
+}
+  
+.calculation {
+    width: 310px;
+    height: 610px;
+    background-color: #ffffff;
+    font-family: "Gilory";
+    border-radius: 15px 15px;
+    overflow: hidden;
+  }
+  
+.top {
+    padding: 30px;
+    background-color: #b1c9e0;
+    text-align: right;
+    letter-spacing: 1.8px;
+    border-bottom-left-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+  }
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+#prev {
+    width: 100%;
+    font-size: 80%;
+    color: #4e4e4e;
+    height: max-content;
+}
+button:last-child{
+    background: #98cbec;
+}
+.bg-blue {
+    background: #3498db;
+}
+  
+button:last-child:hover {
+    background: #68a3ca;
+}
+#result {
+    font-size: 3em;
+    margin: 5px 0px;
+    height: max-content;
+    overflow-x:auto;
+    text-align: right;
+    width: 100%;
+  }
+#result:empty::before{
+    content: '0';
+}
+#prev:empty::before{
+    content: '.';
+    opacity: 0;
+}
+#result::-webkit-scrollbar-thumb {
+    background-color: rgb(152, 171, 187);
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;  
+  }
+  
+#result::-webkit-scrollbar {
+    width: 30px;
+}
+  
+.but, .mid{
+    line-height: 3.3;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(236, 236, 236);
+    height: 65px;
+    display: block;
+    font-size: 1.3em;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    width: 65px;
+    font-family: "Gilory";
+    transition: 0.2s;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 30px 30px;
+}
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    font-family:'Courier New', Courier, monospace;
+}
+img{
+    position: relative;
+    left: 5px;
+    width: 30px;
+    height: auto;
+    pointer-events: none;
+
+}
+
+.but:hover {
+    background-color: #d3d3d3;
+}
+.g-but{
+    background-color: rgb(217, 238, 211)
+}
+.g-but:hover{
+    background-color: rgb(190, 219, 183)
+}
+.brackets:hover{
+    background-color: #364c63;
+
+  }
+.calc-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #ced4d9;
+    padding: 10px;
+  }
+.github{
+    margin-top: 20px;
+    color: white
+}
+a{
+    color:#98cbec;
+}
+a:hover{
+    color: #68a3ca;
+}
+  
